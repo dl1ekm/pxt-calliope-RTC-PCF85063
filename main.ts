@@ -112,7 +112,7 @@ namespace PCF85063TP {
         return timestr;
     }
 
-    //% blockId="setClock" block="Setze Datum und Uhrzeit Jahr %year Monat %month Wochentag %weekday Tag %day Stunde %hours Minuten %minutes %Sekunden %seconds"
+    //% blockId="setClock" block="Setze Datum und Uhrzeit Jahr %year Monat %month Wochentag %weekday Tag %day Stunden %hours Minuten %minutes Sekunden %seconds"
     //% year.min=2000 year.max= 2099 month.min=1 month.max=12 weekday.min=0 weekday.max=6
     //% day.min=1 day.max=31 hours.min=1 hours.max=23 minutes.min=1 minutes.max=59 seconds.min=1 seconds.max=59
     export function setClock(year: number, month: number, weekday: number,
