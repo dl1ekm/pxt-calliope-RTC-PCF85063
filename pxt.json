@@ -1,5 +1,5 @@
 {
-    "name": "pxt-calliope-grovepcf85063tp",
+    "name": "pxt-calliope-grovePCF85063tp",
     "version": "0.0.0",
     "description": "",
     "dependencies": {
@@ -14,5 +14,5 @@
         "test.ts"
     ],
     "public": false,
-    "additionalFilePaths": []
+    "preferredEditor": "tsprj"
 }
