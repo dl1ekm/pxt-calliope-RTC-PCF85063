@@ -4,11 +4,10 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*"
     },
     "files": [
         "README.md",
-        "main.ts"
+        "grovePCF85063TP.ts"
     ],
     "testFiles": [
         "test.ts"
