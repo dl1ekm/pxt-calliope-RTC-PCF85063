@@ -49,11 +49,22 @@ namespace PCF85063TP {
     let rtcModule = 0;
 
     function DECtoBCD(n: number): number {
-        return (n / 10 * 16) + (n % 10);
+        //return (n / 10 * 16) + (n % 10);
+	let s = n.toString();
+        let m = 0;
+        let bcd = 0;
+        let shiftcount = 0;
+        for (let i = s.length; i > 0; i--) {
+            m = parseInt(s[i - 1]);
+            bcd = bcd + (m << shiftcount);
+            shiftcount = shiftcount + 4;
+        }
+        return bcd;
     }
 
     function BCDtoDEC(n: number): number {
-        return (n / 16 * 10) + (n % 16);
+        //return (n / 16 * 10) + (n % 16);
+	return (n & 15) + (((n & 240) >> 4) * 10) + (((n & 3840) >> 8) * 100) + (((n & 61440) >> 12) * 1000);
     }
 
     // 
