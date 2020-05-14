@@ -185,7 +185,7 @@ namespace PCF85063TP {
         pins.i2cWriteNumber(PCF85063TP_ADDR, (CTRL_DAY << 8) + DECtoBCD(day), NumberFormat.UInt16BE) // day
         pins.i2cWriteNumber(PCF85063TP_ADDR, (CTRL_WEEKDAY << 8) + DECtoBCD(weekday), NumberFormat.UInt16BE) // weekday
         pins.i2cWriteNumber(PCF85063TP_ADDR, (CTRL_MONTH << 8) + DECtoBCD(month), NumberFormat.UInt16BE) // month
-        pins.i2cWriteNumber(PCF85063TP_ADDR, (CTRL_YEAR << 8) + DECtoBCD(year-2000), NumberFormat.UInt16BE) // year
+        pins.i2cWriteNumber(PCF85063TP_ADDR, (CTRL_YEAR << 8) + DECtoBCD(year), NumberFormat.UInt16BE) // year
         pins.i2cWriteNumber(PCF85063TP_ADDR, CTRL_START, NumberFormat.UInt16BE) // control 1 start
     }
 
