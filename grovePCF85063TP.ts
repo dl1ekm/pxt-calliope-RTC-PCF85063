@@ -28,7 +28,7 @@ enum DateTime_Format {
 //% weight=10 color=#2874a6  icon="\uf017"
 namespace PCF85063TP {
     let PCF85063TP_ADDR = 0x51;
-    const CTRL_YEAR = 0x17;
+    const CTRL_YEAR = 0x0A;
     const CTRL_MONTH = 0x09;
     const CTRL_WEEKDAY = 0x08;
     const CTRL_DAY = 0x07;
