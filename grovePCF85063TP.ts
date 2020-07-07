@@ -6,8 +6,9 @@
  * www.hackster.io/supereugen/genaue-echtzeituhr-abfragen-2ad9ef
  * 
  * SPEC: www.nxp.com/docs/en/data-sheet/PCF85063TP.pdf
+ * SPEC: www.nxp.com/docs/en/data-sheet/PCF85063A.pdf
  * 
- * @author Raik Andritschke
+ * @author Marcel André, Raik Andritschke
  */
 
 enum DateTime_Format {
